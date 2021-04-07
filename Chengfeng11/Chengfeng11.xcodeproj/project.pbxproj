@@ -13,6 +13,7 @@
 		BEB70F7C25E8B4120057D83B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB70F7B25E8B4120057D83B /* Preview Assets.xcassets */; };
 		BEB70F8725E8B4120057D83B /* Chengfeng11Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB70F8625E8B4120057D83B /* Chengfeng11Tests.swift */; };
 		BEB70F9225E8B4120057D83B /* Chengfeng11UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB70F9125E8B4120057D83B /* Chengfeng11UITests.swift */; };
+		BED44CAE261C67DD00BB1D55 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED44CAD261C67DD00BB1D55 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		BEB70F8D25E8B4120057D83B /* Chengfeng11UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Chengfeng11UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB70F9125E8B4120057D83B /* Chengfeng11UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chengfeng11UITests.swift; sourceTree = "<group>"; };
 		BEB70F9325E8B4120057D83B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED44CAD261C67DD00BB1D55 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				BEB70F7425E8B4100057D83B /* Chengfeng11App.swift */,
 				BEB70F7625E8B4100057D83B /* ContentView.swift */,
+				BED44CAD261C67DD00BB1D55 /* ImagePicker.swift */,
 				BEB70F7825E8B4120057D83B /* Assets.xcassets */,
 				BEB70F7D25E8B4120057D83B /* Info.plist */,
 				BEB70F7A25E8B4120057D83B /* Preview Content */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED44CAE261C67DD00BB1D55 /* ImagePicker.swift in Sources */,
 				BEB70F7725E8B4100057D83B /* ContentView.swift in Sources */,
 				BEB70F7525E8B4100057D83B /* Chengfeng11App.swift in Sources */,
 			);
