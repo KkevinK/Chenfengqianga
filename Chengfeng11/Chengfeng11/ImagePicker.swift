@@ -17,7 +17,8 @@ struct ImagePicker: UIViewControllerRepresentable {
     }
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
-        let picker = UIImagePickerController()
+        //let picker = UIImagePickerController()
+        let picker = PickerController()
         picker.delegate = context.coordinator
         return picker
     }
@@ -39,5 +40,22 @@ struct ImagePicker: UIViewControllerRepresentable {
 
             parent.presentationMode.wrappedValue.dismiss()
         }
+    }
+}
+
+class PickerController: UIImagePickerController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("Now Loading!")
+    }
+}
+
+class ImageSaver: NSObject {
+    func writeToPhotoAlbum(image: UIImage) {
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveError), nil)
+    }
+
+    @objc func saveError(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        print("Save finished!")
     }
 }
